@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Uploader</title>
+</head>
+<body>
+<form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"><br><br>
+    <input type="submit">
+</form>
+
+{% if description %}
+<p>{{ description }}</p>
+{% endif %}
+
+</body>
+</html>
